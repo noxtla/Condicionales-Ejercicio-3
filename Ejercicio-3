@@ -1,0 +1,26 @@
+package Condicionales;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	public static void main(String[] args) {
+			
+	char letra;
+		
+		letra = JOptionPane.showInputDialog("Digite una letra").charAt(0);
+		
+		
+		if (Character.isUpperCase(letra)) {
+			JOptionPane.showMessageDialog(null,"La letra es mayuscula");
+			
+		}
+		else if (Character.isLowerCase(letra)) {
+			JOptionPane.showMessageDialog(null,"La letra es minucula");
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "Esa no es una letra");
+		}
+	}
+
+}
